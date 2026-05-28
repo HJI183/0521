@@ -1,6 +1,14 @@
 #include "mul.h"
 
-int mul(int x, int y)
-{
+#include "add.h"
 
+int mulFunc(int a, int b) {
+	int c = 0;
+
+	while (b > 0) {
+		c = addFunc(c, a);
+		b = b - 1;
+	}
+
+	return c;
 }

@@ -1,7 +1,2 @@
 #pragma once
-
-#include <stdio.h>
-
-int mul(int, int);
-
-
+int mulFunc(int, int);
