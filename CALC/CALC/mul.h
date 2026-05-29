@@ -1,2 +1,3 @@
 #pragma once
-int mulFunc(int, int);
+
+int mul(int x, int y);
