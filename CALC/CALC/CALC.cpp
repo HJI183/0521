@@ -2,28 +2,29 @@
 //
 
 #include <iostream>
-#include "CALC.h" // 기능들이 모여있는 헤더 포함
-#include "div.h"
-#include "mul.h"
+
+#include "add.h"
 #include "sub.h"
+#include "mul.h"
 
-int main() {
-    double num1 = 12;
-    double num2 = 4;
+using namespace std;
 
-    std::cout << "=== 계산기 프로그램 시작 ===" << std::endl;
-    std::cout << "입력된 값: " << num1 << ", " << num2 << std::endl;
-    std::cout << "---------------------------" << std::endl;
+int main()
+{
+    int a, b;
 
-    // 각각의 파일에 분리된 함수들을 호출합니다.
-    std::cout << "뺄셈 결과 (sub): " << sub(num1, num2) << std::endl;
-    std::cout << "곱셈 결과 (mul): " << mul(num1, num2) << std::endl;
-    std::cout << "나눗셈 결과 (div): " << div1(num1, num2) << std::endl;
+    cout << "첫 번째 숫자 입력 : ";
+    cin >> a;
 
-    std::cout << "---------------------------" << std::endl;
+    cout << "두 번째 숫자 입력 : ";
+    cin >> b;
+
+    cout << "덧셈 결과 : " << add(a, b) << endl;
+    cout << "뺄셈 결과 : " << sub(a, b) << endl;
+    cout << "곱셈 결과 : " << mul(a, b) << endl;
+
     return 0;
 }
-
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
 
